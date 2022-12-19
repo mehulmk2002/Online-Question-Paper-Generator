@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,300;0,400;1,300&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+
+
+
+body {
+    width: 100%;
+    background: #d0d1d1;
+    position: relative;
+    display: flex;
+
+}
+
+/* 1 Menu bar  */
+
+#menu {
+    background-color: #111827;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: beige;
+    padding: 30px 0 0 30px;
+}
+
+#menu .logo img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li {
+    list-style: none;
+    padding: 15px 0px;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover {
+    background: #253047;
+    cursor: pointer;
+}
+#menu .items li:nth-child(1)
+{
+    border-left: 4px solid #fff;
+} 
+
+#menu .items li i {
+    color: rgb(134, 141, 151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i,
+#menu .items li:hover a {
+    color: #fff;
+}
+
+#menu .items li a {
+    text-decoration: none;
+    color: rgb(134, 141, 151);
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+/* 2 Interface Board*/
+
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+
+/* 2.1 Navigation bar*/
+#interface .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#4d9be9;/* #38cfca;*/ 
+    padding: 15px 30px;
+    border-bottom: 4px solid #e60246;
+    position: fixed;
+    width: calc(100% - 300px);
+}
+
+
+
+#interface .navigation .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#interface .navigation .profile i {
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #253047;
+}
+
+#interface .navigation .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/*============================================*/
+
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#menu-btn{
+    display: none;
+    color: #2b2b2b;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+  /****quizBox*****/
+  .quizBox{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+   
+  }
+
+  .score-List {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+/*==================TABLE==========================*/
+/*Table Desining*/
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+
+/*edit profile*/
+.editProfile{
+    width: 100%;
+    height: 700px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+.subEdiPro form input
+{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 40px;
+}
+.subEdiPro
+{
+    background-color: #fff;
+    padding: 40px;
+    width: 35%;
+    box-shadow: 10px 10px 5px #bcc1c2ba;
+}
+
+/*Change Password*/
+.changePwd
+{
+    width: 100%;
+    height: 500px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.subChangePwd form input
+{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 40px;
+}
+
+.subChangePwd
+{
+    background-color: #fff;
+    padding: 40px;
+    width: 35%;
+    box-shadow: 10px 10px 5px #bcc1c2ba;
+}
+
+.btn {
+    background: #1a73e8;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background: #05479c;
+}
+.playq a  {
+    background-color: #1a73e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 35px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+  
+  }
+
+  .playq a:hover {
+    background-color:#05479c;
+  }
+
+
+  label {
+    color: #e60246;
+    font-size: 20px;
+    padding: 0 20px;
+    font-weight: bold;
+
+  }
